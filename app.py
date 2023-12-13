@@ -1,10 +1,11 @@
 import streamlit as st
 from PIL import Image
 import numpy as np
-from keras.models import load_model
-from keras.applications.resnet50 import ResNet50, preprocess_input
-from keras.preprocessing.sequence import pad_sequences
-from keras.preprocessing.text import tokenizer_from_json
+from tensorflow.keras.models import load_model
+from tensorflow.keras.applications.resnet50 import ResNet50, preprocess_input
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.text import tokenizer_from_json
 import json
 
 # Load the feature extraction model
